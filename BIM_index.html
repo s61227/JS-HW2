@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My BMI</title>
+    <link rel="stylesheet" href="css/cssReset.css">
+    <link rel="stylesheet" href="css/BMI_layout.css">
+    <!-- font-awesome的CND -->
+    <script src="https://use.fontawesome.com/771d69edc4.js"></script>
+</head>
+<body>
+    <div class="allWrapper">
+        <header>
+            <section>
+                <img src="image/BMICLogo.png">
+            </section>
+            <section class="input-cal">
+                <label for="Height">身高 cm</label><br>
+                <input type="text" name="Height" id="myHeight" placeholder="請輸入身高" required><br>
+
+                <label for="Weight">體重 kg</label><br>
+                <input type="text" name="Weight" id="myWeight"  placeholder="請輸入體重" required>
+            </section>
+            <section>
+                <input type="button" value="看結果" id="sendBtn" disabled>
+                <div class="showResult">
+                    <div>
+                        <div class="circleline">
+                            <span class="reBMI"></span><br>
+                            <small>BMI</small>
+                        </div>
+                        <div class="reBtn"><i class="fa fa-refresh fa-spin"></i></div>
+                    </div>
+                    <span class="reLevel"></span>
+                </div>
+            </section>
+        </header>
+        <main>
+            <h1>BMI 紀錄</h1>
+            <ul class="BMI-List"></ul>
+        </main>
+        <footer>
+            <img src="image/BMICLogo_footer.png">
+        </footer>
+    </div>
+    <script src="js/BMI_script.js"></script>
+</body>
+</html>

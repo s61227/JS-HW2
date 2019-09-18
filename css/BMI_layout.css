@@ -1,0 +1,205 @@
+body,html{
+    height: 100%;
+}
+.allWrapper{
+    width: 100%;
+    height: 100%;
+    font-family: '微軟正黑體', sans-serif;
+}
+/* header區 ========================================== */
+header{
+    width: 100%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+}
+header section:nth-of-type(1){
+    margin-right: 95px;    
+}
+header section:nth-of-type(3){
+    margin-left: 55px;
+}
+header section label{
+    color:#FFD366;
+    font-size: 18px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+header section input{
+    margin-bottom: 20px;
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.18);
+    padding: 5px 10px;
+    color: #fff;
+    font-family: '微軟正黑體', sans-serif;
+    outline: none;
+}
+header section input::placeholder{
+    color: #fff;
+}
+header section input#sendBtn{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #FFD366;
+    font-size: 24px;
+    color: #424242;
+    font-family: '微軟正黑體', sans-serif;
+    cursor: pointer;
+}
+input#sendBtn:hover{
+    background: #FFD366;
+    box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+}
+#sendBtn.active{
+    background: #DEA821;
+    border: 2px solid #DEA821;
+}
+#sendBtn.active:hover{
+    background: #DEA821;
+    box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+}
+
+.showResult{ 
+    display: none;
+}
+.re-light{ display: block; color:#31BAF9;}
+.re-good{ display: block; color: #86D73F; }
+.re-heavy{ display: block; color: #FF982D; }
+.re-fat{ display: block; color: #FF6C03; }
+.re-fatter{ display: block; color: #FF6C03; }
+.re-fattest{ display: block; color: #FF1200; }
+
+.showResult >div{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+}
+.showResult div .circleline{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: transparent;
+    text-align: center;
+    padding: 32.5px 0;
+}
+.re-light div .circleline{ border: 5px solid #31BAF9; }
+.re-good div .circleline{ border: 5px solid #86D73F; }
+.re-heavy div .circleline{ border: 5px solid #FF982D; }
+.re-fat div .circleline{ border: 5px solid #FF6C03; }
+.re-fatter div .circleline{ border: 5px solid #FF6C03; }
+.re-fattest div .circleline{ border: 5px solid #FF1200; }
+
+.showResult>span{
+    display: inline-block;
+    font-size: 32px;
+    margin-left: 18px;
+    vertical-align: top;
+    margin-top: 40px;display: inline-block;
+    font-size: 32px;
+}
+.circleline span{
+    font-size: 32px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+.circleline small{
+    font-size: 14px;
+}
+.showResult div .reBtn{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.re-light div .reBtn{ background-color: #31BAF9; }
+.re-good div .reBtn{ background-color: #86D73F; }
+.re-heavy div .reBtn{ background-color: #FF982D; }
+.re-fat div .reBtn{ background-color: #FF6C03; }
+.re-fatter div .reBtn{ background-color: #FF6C03; }
+.re-fattest div .reBtn{ background-color: #FF1200; }
+
+.showResult div .reBtn:hover{
+    background-color: #fff;
+}
+.showResult div .reBtn i{
+    color: #424242;
+}
+
+/* main區 ========================================== */
+main{
+    width: 100%;
+    min-height: 350px;
+    padding: 48px 0 74px;
+    background-color:#e0e0e0;
+}
+main h1{
+    font-size: 24px;
+    color: #424242;
+    padding-bottom: 36px;
+    text-align: center;
+}
+main ul{
+    max-width: 650px;
+    margin: 0 auto;
+}
+main ul li{
+    background-color: #fff;
+    margin-bottom: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+main ul li.light{
+    border-left: 7px solid #31BAF9;
+}
+main ul li.good{
+    border-left: 7px solid #86D73F;
+}
+main ul li.heavy{
+    border-left: 7px solid #FF982D;
+}
+main ul li.fat{
+    border-left: 7px solid #FF6C03;
+}
+main ul li.fatter{
+    border-left: 7px solid #FF6C03;
+}
+main ul li.fattest{
+    border-left: 7px solid #FF1200;
+}
+main ul li span{
+    color: #4A4A4A;
+    font-size: 20px;
+}
+main ul li span small{
+    font-size: 12px;
+    margin-right: 5px;
+
+}
+main ul li span i{
+    cursor: pointer;
+}
+
+/* footer區 ========================================== */
+footer{
+    background-color:#FFD366; 
+    text-align: center;
+    padding: 18px 0;
+}
+footer img{
+    width: 55px;
+    height: 55px;
+}
